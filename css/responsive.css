@@ -1,0 +1,56 @@
+
+        @media (max-width: 1024px) {
+            .nav {
+                display: none;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .news-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .visual h2 {
+                font-size: 40px;
+            }
+        }
+
+        /* 모바일 버전 (640px 이하) */
+        @media (max-width: 640px) {
+            .util {
+                justify-content: center;
+                gap: 10px;
+            }
+            .util li a {
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+            .visual {
+                height: 380px;
+            }
+            .visual h2 {
+                font-size: 32px;
+            }
+            .visual p {
+                font-size: 13px;
+            }
+            .news-list {
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .footer-top {
+                gap: 10px;
+            }
+        }
+        /* PC 화면 반응형 지점 (예: 1024px 이상) */
+@media screen and (min-width: 1024px) {
+    /* 모바일 토글 메뉴와 햄버거 버튼을 강제로 숨김 */
+    .mobile-nav,
+    .mobile-nav.active,
+    .hamburger {
+        display: none !important;
+    }
+
+    /* PC 메뉴 보이기 */
+    .nav {
+        display: flex !important;
+    }
+}

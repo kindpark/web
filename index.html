@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GR</title>
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Font Awesome (햄버거 & 화살표 아이콘) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/footer.css"/>
+    <link rel="stylesheet" href="./css/header.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="./css/news.css"/>
+    <link rel="stylesheet" href="./css/product.css"/>
+    <link rel="stylesheet" href="./css/responsive.css"/>
+    <link rel="stylesheet" href="./css/visual.css"/>
+</head>
+    <!-- 전체 레이아웃 wrap -->
+    <div class="wrap">
+
+        <!-- 헤더 영역 -->
+        <header class="header">
+            <div class="inner">
+                <!-- 헤더 탑 (유틸리티) -->
+                <div class="header-top">
+                    <ul class="util">
+                        <li>
+                            <a href="#">Contact</a>
+                            <a href="#">Help</a>
+                            <a href="#">Login</a>
+                            <a href="#">Join</a>
+                            <a href="#">Sitemap</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 헤더 바텀 (메인 메뉴) -->
+                <div class="header-bt">
+                    <h1><a href="#">GREEN-A</a></h1>
+                    
+                    <ul class="nav">
+                        <li><a href="#">DEPARTMENT</a></li>
+                        <li><a href="#">GALLERY</a></li>
+                        <li><a href="#">YOUTUBE</a></li>
+                        <li><a href="#">COMMUNITY</a></li>
+                        <li><a href="#">LOCATION</a></li>
+                    </ul>
+
+                    <!-- 모바일/태블릿 햄버거 버튼 -->
+                    <div class="hamburger" id="hamburgerBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 모바일 토글 메뉴 -->
+            <div class="mobile-nav" id="mobileNav">
+                <ul>
+                    <li><a href="#">DEPARTMENT</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">YOUTUBE</a></li>
+                    <li><a href="#">COMMUNITY</a></li>
+                    <li><a href="#">LOCATION</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- 비주얼 영역 (비디오 배경 위치) -->
+        <section class="visual">
+            <video autoplay loop muted playsinline>
+                <source src="./images/visual.mp4" type="video/mp4"/>
+                Your browser does not support video tag.
+            </video>
+            <div class="video inner">
+                <h2>INNOVATION</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident voluptatibus error culpa?</p>
+                <a href="#">view detail</a>
+            </div>
+        </section>
+
+        <!-- 최신 뉴스 영역 -->
+        <section class="news">
+            <div class="inner">
+                <h2 class="section-title">RECENT NEWS</h2>
+                <div class="news-list">
+                    <div class="news-item">
+                        <div class="news-img">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="News 1">
+                        </div>
+                        <h3>Lorem ipsum dolor sit.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aspernatur</p>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-img">
+                            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="News 2">
+                        </div>
+                        <h3>Lorem ipsum dolor sit.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aspernatur</p>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-img">
+                            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80" alt="News 3">
+                        </div>
+                        <h3>Lorem ipsum dolor sit.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aspernatur</p>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-img">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="News 4">
+                        </div>
+                        <h3>Lorem ipsum dolor sit.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aspernatur</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 프로젝트 상품 영역 (스와이퍼) -->
+        <section class="product">
+            <div class="inner">
+                <h2 class="section-title">OUR PROJECT</h2>
+                <p class="product-sub">GREEN-A의 다양한 프로젝트를 만나보세요.</p>
+
+                <!-- Swiper Slider -->
+                <div class="swiper productSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <div class="card-img">
+                                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Project 1">
+                                </div>
+                                <div class="card-text">
+                                    <h3>Creative Design</h3>
+                                    <p>창의적인 디자인 프로젝트</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <div class="card-img">
+                                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80" alt="Project 2">
+                                </div>
+                                <div class="card-text">
+                                    <h3>Modern Space</h3>
+                                    <p>현대적인 공간 디자인</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <div class="card-img">
+                                    <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=80" alt="Project 3">
+                                </div>
+                                <div class="card-text">
+                                    <h3>Visual Communication</h3>
+                                    <p>감각적인 시각 디자인</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <div class="card-img">
+                                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Project 4">
+                                </div>
+                                <div class="card-text">
+                                    <h3>Digital Marketing</h3>
+                                    <p>디지털 마케팅 솔루션</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Swiper Navigation & Pagination -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 푸터 영역 -->
+        <footer class="footer">
+            <div class="inner">
+                <div class="footer-top">
+                    <span class="footer-logo">GREEN-A</span>
+                    <a href="#">Plicy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Family Site</a>
+                    <a href="#">Sitemap</a>
+                </div>
+                <div class="footer-bt">
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, facere.</p>
+                    <p class="contact">
+                        <span>TEL : 02-111-1234</span>
+                        <span>C.P : 010-1234-5678</span>
+                    </p>
+                    <p class="copy">2026 GR © copyright all right reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- Swiper JS CDN (Swiper 기능 라이브러리) -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

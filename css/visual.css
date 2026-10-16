@@ -1,0 +1,57 @@
+.visual {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  background-color: #000;
+}
+.visual video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  opacity: 0.65;
+}
+.visual .video.inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 10;
+  color: #fff;
+}
+.visual h2 {
+  font-size: 52px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.visual p {
+  font-size: 15px;
+  font-weight: 300;
+  max-width: 500px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: #eee;
+}
+.visual a {
+  display: inline-block;
+  padding: 10px 28px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: lowercase;
+  transition: all 0.3s;
+}
+.visual a:hover {
+  background-color: #fff;
+  color: #000;
+}
